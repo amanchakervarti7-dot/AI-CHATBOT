@@ -67,7 +67,7 @@ if user_prompt:
 if st.sidebar.button("🔄 Reset Conversation"):
     st.session_state.chat = model.start_chat(history=[])
     st.session_state.messages = []
-    st.return()
+    st.experimental_return()
 
 
 st.markdown('** Design And Devlopment by: Aman Chakeravarti**')
